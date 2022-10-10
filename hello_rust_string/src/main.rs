@@ -1,5 +1,7 @@
 fn main() {
-    let str_hello_world = "Hello, world!";
+    let str_hello = "Hello";
+    let str_world = "world!";
+    let str_hello_world = String::from(str_hello) + ", " + str_world;
     let str_even = "even number";
     let str_odd = "odd number";
     for n in 1..5 {
@@ -10,5 +12,8 @@ fn main() {
         else {
             println!("    {}", str_odd);
         }
-    }  
+    }
+    for i in str_hello.as_str().chars() {
+        println!("{}", i);
+    }
 }
